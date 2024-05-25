@@ -63,4 +63,20 @@ class AddressRepository extends GetxController {
       throw 'Something went wrong while saving Address Information. Try again letter';
     }
   }
+
+  Future<void> addEditAddress(AddressModel address, String docId) async {
+    try {
+      final userId = AuthenticationRepository.instance.authUser!.uid;
+      await _db
+          .collection('Users')
+          .doc(userId)
+          .collection('Addresses')
+          .doc(docId)
+          .update(address.toJson());
+      update();
+      // return currentAddress.id;
+    } catch (e) {
+      throw 'Something went wrong while saving Address Information. Try again letter';
+    }
+  }
 }

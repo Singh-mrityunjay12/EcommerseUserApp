@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,8 +13,8 @@ import '../model/adress/adress_model.dart';
 import '../screens/address/add_new_address.dart';
 import '../screens/address/widgets/single_address.dart';
 
-class AddressController extends GetxController {
-  static AddressController get instance => Get.find();
+class AddressEditController extends GetxController {
+  static AddressEditController get instance => Get.find();
 
   final name = TextEditingController();
   final phoneNumber = TextEditingController();
@@ -27,7 +26,6 @@ class AddressController extends GetxController {
 
   RxBool refreshData = true.obs;
 
-  final FirebaseFirestore _db = FirebaseFirestore.instance;
   GlobalKey<FormState> addressFormKey = GlobalKey<FormState>();
 
   final Rx<AddressModel> selectedAddress = AddressModel.empty().obs;
@@ -85,7 +83,7 @@ class AddressController extends GetxController {
   }
 
   //Add new address
-  Future addNewAddresses() async {
+  Future addNewAddresses(String docId) async {
     try {
       //Start loading
       MFullScreenLoader.openLoadingDialog(
@@ -116,11 +114,11 @@ class AddressController extends GetxController {
           country: country.text.trim(),
           selectAddress: true);
 
-      final id = await addressRepository.addAddress(address);
+      await addressRepository.addEditAddress(address, docId);
 
       //Update selected address status
-      address.id = id;
-      await selectAddress(address);
+      // address.id = id;
+      // await selectAddress(address);
       //Remove loader
       MFullScreenLoader.stopLoading();
       //Show success message
@@ -207,21 +205,5 @@ class AddressController extends GetxController {
     state.clear();
     country.clear();
     addressFormKey.currentState!.reset();
-  }
-
-  //Delete Address Form FirestoreFirebase means from Collection
-  Future<void> deleteImageFromFireStore1(
-      String userId, String addressDocId) async {
-    try {
-      await _db
-          .collection('Users')
-          .doc(userId)
-          .collection('Addresses')
-          .doc(addressDocId)
-          .delete();
-      update();
-    } catch (e) {
-      MLoader.errorSnackBar(title: 'Update Image', message: e.toString());
-    }
   }
 }
