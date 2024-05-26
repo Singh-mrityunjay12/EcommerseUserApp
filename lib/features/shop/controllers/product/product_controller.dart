@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../common/widgets/loadders/loadders.dart';
@@ -11,6 +13,9 @@ class ProductController extends GetxController {
   final productRepository = Get.put(ProductRepository());
   RxList<ProductModel> featuredProducts = <ProductModel>[].obs;
 
+  final FirebaseFirestore _db = FirebaseFirestore.instance;
+
+  final TextEditingController searchText = TextEditingController();
   @override
   void onInit() {
     fetchFeaturedProducts();
@@ -100,5 +105,17 @@ class ProductController extends GetxController {
   //Check Product Stock status
   String getProductStockStatus(int stock) {
     return stock > 0 ? 'In Stock' : 'Out of Stock';
+  }
+
+  Future<List<ProductModel>> searchProducts(title) async {
+    try {
+      final snapshot = await _db.collection('Products').get();
+      final list =
+          snapshot.docs.map((e) => ProductModel.fromSnapshot(e)).toList();
+      return list;
+    } catch (e) {
+      MLoader.errorSnackBar(title: "Oh Snap!", message: e.toString());
+      return [];
+    }
   }
 }
