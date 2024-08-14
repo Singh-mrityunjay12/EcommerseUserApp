@@ -25,6 +25,7 @@ class TAppTheme {
       elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
       outlinedButtonTheme: MOutlineButtonTheme.lightOutlineButtonTheme,
       inputDecorationTheme: MTextFieldTheme.lightInputDecorationTheme);
+
   static ThemeData darkTheme = ThemeData(
       useMaterial3: true,
       fontFamily: 'Poppins',
