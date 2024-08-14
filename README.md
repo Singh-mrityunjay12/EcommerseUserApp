@@ -18,3 +18,29 @@ Description about this App:An E-commerce app is a digital platform that facilita
 7.Wishlist or Favorites:Users can save products to a wishlist or favorites list for future reference or potential purchases and you van also remove wishlist according to own choice.
 
 8.Account Updates:Users can create a new account,select photo from phone according to own desire ,user can chake own order,messages and wishlist item in your account.user can edit your account if he want and user can be logout from this app.
+
+
+<div style=align-items: center;">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E1.jpg">
+     <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E19.jpg">
+    <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E20.jpg">
+    <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E21.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E2.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E3.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E4.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E5.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E6.jpg">
+   <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E7.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E8.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E9.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E10.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E11.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E12.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E13.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E14.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E15.jpg">
+  <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E16.jpg">
+    <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E17.jpg">
+    <img width=200px height=450px src="https://github.com/Singh-mrityunjay12/Flutter_ecommerce_user_app/blob/main/screenshotofApp/E18.jpg">
+ 
+</div>
